@@ -1,70 +1,119 @@
-.header {
-  font-family: 'Rye', cursive;
-  background-color: yellow;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  padding: 30px;
-  font-family: 'Gelasio', cursive;
-  color: green;
-  background-image: url("/harry_potter.gif");
-
+.formz {
+    width: 100%;
+    color: black;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    position: absolute;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #A2CCCE;
+    box-sizing: border-box;
+    font-family: 'Gelasio';
+    font-size: 1.5em;
 }
 
-p {
-  color: white;
-  font-size: 1em;
-  background-color: red;
-  opacity: 50%;
-  padding: 5px;
-}
-a {
-  text-decoration: none;
-  color: yellow;
-}
+  .title {
+    font-size: 3em;
+    font-family: 'Gelasio', cursive;
+  }
 
-a:hover {
-  color: darkred;
-}
+  .header {
+    font-family: 'Rye', cursive;
+    background-color: #F6AF26;
+    font-size: 2em;
+  }
 
-#menu {
-  width: 220px;
-  display: flex;
-  margin: 0 auto;
-}
+  body {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #F6AF26;
+    background-image: url("/harry_potter.gif");
+  }
 
-.menu-item {
-  display: inline-block;
-  flex-grow: 1;
-}
+  p {
+    color: #E16F6A;
+    font-size: 1.5em;
+    background-color: #F6AF26;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    font-style: bold;
+  }
 
-#logo {
-  text-align: center;
-}
+  a {
+    text-decoration: none;
+  }
 
-#student-wrapper {
-  margin-left: 300px;
-}
-.student {
-  border: 5px double;
-  margin: 0 35px 30px 0;
-  padding: 25px;
-  width: 200px;
-  display: inline-block;
-}
+  a:hover {
+    color: darkred;
+  }
 
-.form-el {
-  margin: 10px 0;
-}
+  #menu {
+    width: 220px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    word-wrap: normal;
 
-.form-wrapper .form-el input[type="submit" i] {
-  margin-left: 180px;
-}
+  }
 
-.form-wrapper .form-el label {
-  text-align: right;
-  display: inline-block;
-  vertical-align: middle;
-  width: 160px;
-  margin: 0 1em 0 0;
-}
+  .menu-item {
+
+    display: block;
+    flex-grow: 2;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #8EADB7;
+    margin: 6px;
+    min-width: 150px;
+
+  }
+
+  #logo {
+    text-align: center;
+    font-family: 'Fjalla One';
+    font-size: 2.5em;
+  }
+
+  #student-wrapper {
+    margin-left: 300px;
+  }
+
+  .student_header {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .student {
+    border: 5px double;
+    margin: 0 35px 30px 0;
+    padding: 25px;
+    width: 200px;
+    display: inline-block;
+  }
+
+  .form-el {
+    margin: 10px 0;
+  }
+
+  .form-wrapper .form-el input[type="submit" i] {
+    margin-left: 180px;
+  }
+
+  .form-wrapper .form-el label {
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+    width: 160px;
+    margin: 0 1em 0 0;
+  }
