@@ -13,6 +13,13 @@ get '/hogwarts/students/?' do
   @students = Student.all()
   erb(:index)
 end
+
+# show
+get '/hogwarts/students/:id' do
+  @student = Student.find(params[:id])
+  erb(:show)
+end
+
 # new
 get '/hogwarts/students/new/?' do
   erb(:new)
