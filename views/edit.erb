@@ -11,20 +11,12 @@
 
   <label for="house_select">Select House:</label>
   <select name="house_id" id="house_select">
-
-
-
     <% @houses.each do |house| %>
     <option value="<%=house.id%>"
       <%= "selected" if @student.house_id == house.id %>>
       <%= house.name %>
     </option>
     <% end %>
-
-
-
-
-
   </select>
 
   <input type="submit" value="Make new student">
