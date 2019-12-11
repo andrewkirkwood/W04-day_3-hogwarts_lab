@@ -11,18 +11,20 @@
 
   <label for="house_select">Select House:</label>
   <select name="house_id" id="house_select">
-    <option value="1"
-    <%= "selected" if @student.house.id == 1%>
-    >Gryffindor</option>
-    <option value="2"
-    <%= "selected" if @student.house.id == 2%>
-    >Hufflepuff</option>
-    <option value="3"
-    <%= "selected" if @student.house.id == 3%>
-    >Ravenclaw</option>
-    <option value="4"
-    <%= "selected" if @student.house.id == 4%>
-    >Slytherin</option>
+
+
+
+    <% @houses.each do |house| %>
+    <option value="<%=house.id%>"
+      <%= "selected" if @student.house_id == house.id %>>
+      <%= house.name %>
+    </option>
+    <% end %>
+
+
+
+
+
   </select>
 
   <input type="submit" value="Make new student">
