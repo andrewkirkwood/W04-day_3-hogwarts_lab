@@ -14,16 +14,17 @@ get '/hogwarts/students/?' do
   erb(:index)
 end
 
+# new
+get '/hogwarts/students/new/?' do
+  erb(:new)
+end
+
 # show
 get '/hogwarts/students/:id' do
   @student = Student.find(params[:id])
   erb(:show)
 end
 
-# new
-get '/hogwarts/students/new/?' do
-  erb(:new)
-end
 # create
 post '/hogwarts/students/?' do
   @student = Student.new(params)
@@ -31,6 +32,10 @@ post '/hogwarts/students/?' do
   erb(:create)
 end
 # edit
+get '/hogwarts/students/:id/edit/?' do
+  @student = Student.find(params[:id])
+  erb(:edit)
+end
 
 # update
 
