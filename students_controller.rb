@@ -38,5 +38,9 @@ get '/hogwarts/students/:id/edit/?' do
 end
 
 # update
+post '/hogwarts/students/:id' do
+  Student.new(params).update
+  redirect to '/hogwarts/students/?'
+end
 
 # destroy
